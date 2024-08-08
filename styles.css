@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30, 30, 30);
+}
+
+#head{
+    position: fixed;
+    background-color: rgb(118, 30, 30);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0 1rem 0;
+    z-index: 1;
+    border-bottom: 0.2rem solid white;
+}
+
+span{
+    padding-left: 1.5rem;
+    font-family: "Playwrite AT", cursive;
+    font-size: 1.5rem;
+
+}
+
+#head li{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    padding-right: 2rem;
+}
+
+#head li ul a {
+    text-decoration: none;
+    font-family: "Inconsolata", monospace;
+    font-size: 1.2rem;
+}
+
+
+
+#main-div{
+    display: flex;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    
+}
+
+
+.img1{
+    background-image: url(car2.jpg);
+}
+
+.img2{
+    background-image: url(https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4);
+
+}
+
+.img3{
+    background-image: url(Sports.png);
+}
+
+.img4{
+    background-image: url(Nature\ \(2\).png);
+}
+
+.img5{
+    background-image: url(bikes.png);
+}
+
+
+.car{
+    height: 550px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-position: center;
+    transition: all 1.5s;
+    opacity: 60%;
+}
+
+.car:hover{
+    width: 100%;
+    opacity: 100%;
+}
+
+
+#block{
+     padding-top: 6rem;
+}
+
+.title{
+    text-align: center;
+    padding: 0.5rem 0 2rem 0;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+#qoute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    font-family: "Caveat", cursive;
+
+}
+
+#click{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+
+#carss{
+    padding: 1rem 0 4rem 0;
+}
+
+#fruitss{
+    padding: 1rem 0 4rem 0;
+}
+
+#sports{
+    padding: 1rem 0 4rem 0;
+}
+
+#nature{
+    padding: 1rem 0 4rem 0;
+}
+
+#bikes{
+    padding: 1rem 0 4rem 0;
+}
+
+#img1{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    /* gap: 1rem; */
+    /* padding: 1rem 0rem; */
+    justify-content: center;
+}
+
+#img1 p{
+    display: flex;
+    position: absolute;
+}
+
+.resize{
+    height: 300px;
+    width: 500px;
+    /* border: 4px solid white; */
+    object-fit: cover;
+}
+
+.apex{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+
+#apex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    backdrop-filter: blur(2px);
+    font-size: 3rem;
+}
+
+.img-body:hover{
+    opacity: 1;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: rgb(77, 77, 77);
+    border-top: 0.1rem solid white;
+}
+
+@media (max-width:700px) {
+
+    #main-div a{
+       height: 30vh;
+    }
+
+
+    head{
+            display: flex;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    #qoute{
+        font-size: 1rem;
+        padding: 0rem 2rem 2rem 2rem;
+    }
+
+    span{
+        font-size: 1.1rem;
+        padding: 0.2rem;
+        margin: 0%;
+    }
+
+    #head li ul a {
+        font-size: 0.9rem;
+    }
+
+    #head li{
+        gap: 0.4rem;
+        padding: 0rem 0.7rem 0 0;
+    }
+
+    .resize{
+        width: 20vh;
+        object-fit: cover;
+        height: 20vh;
+    }
+
+    .img-body{
+        display: flex;
+        /* justify-content: center; */
+        font-size: 1rem;
+        /* height: 20vh; */
+    }
+
+    #carss div{
+        height: 20vh;
+    }
+
+    #fruitss div{
+        height: 20vh;
+    }
+    
+    #sports div{
+        height: 20vh;
+    }
+   
+    #nature div{
+        height: 20vh;
+    }
+    
+    #bike div{
+        height: 20vh;
+    }
+}
